@@ -3,11 +3,11 @@ using mvcDotNetTrainingGround.Models;
 
 namespace mvcDotNetTrainingGround.Controllers;
 
-public class DeveloperController : Controller
+public class DevelopersController : Controller
 {
     private Db _db;
 
-    public DeveloperController(Db db)
+    public DevelopersController(Db db)
     {
         _db = db;
     }
