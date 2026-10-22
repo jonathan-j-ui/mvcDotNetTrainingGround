@@ -8,7 +8,7 @@ public class DeveloperController : Controller
 {
     private Db _db;
 
-    public DeveloperController(DbBatch db)
+    public DeveloperController(Db db)
     {
         _db = db;
     }
