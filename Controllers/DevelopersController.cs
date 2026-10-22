@@ -13,3 +13,25 @@ public class DeveloperController : Controller
         _db = db;
     }
 }
+
+public class Db
+{
+    public Db()
+    {
+        Developers = new List<Developer>()
+        {
+            new Developer{
+            Id = 1, 
+            Name = "Stefan",
+            Email = "Stefan@gmail.com"
+            },
+            new Developer{
+            Id = 2, 
+            Name = "Malin",
+            Email = "Malin123@gmail.com"
+            }
+        };
+    }
+
+    public List<Developer> Developers { get; set; }
+}
