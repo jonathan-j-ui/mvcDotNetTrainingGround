@@ -11,4 +11,9 @@ public class DeveloperController : Controller
     {
         _db = db;
     }
+
+    public IActionResult Index()
+    {
+        return View(_db.Developers);
+    }
 }
