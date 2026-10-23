@@ -1,3 +1,10 @@
 @model List<Developer>
 
 <h1>Showing @Model.Count developers!</h1>
+
+<ul>
+    @foreach (var developer in Model)
+    {
+        <li>@developer.Name</li>
+    }
+</ul>
