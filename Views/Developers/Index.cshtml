@@ -16,16 +16,14 @@
                 <td>@developer.Name</td>
                 <td>@developer.Email</td>
             </tr>
-            @{
-                switch (oddIndex)
-                {
-                    case false:
-                        oddIndex = true;
-                        break;
-                    case true:
-                        oddIndex = false;
-                        break;
-                }
+            @switch (oddIndex)
+            {
+                case false:
+                    oddIndex = true;
+                    break;
+                case true:
+                    oddIndex = false;
+                    break;
             }
         }
     </tbody>
