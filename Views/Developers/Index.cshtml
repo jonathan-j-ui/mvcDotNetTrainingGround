@@ -7,12 +7,26 @@
         <th>Email</th>
     </thead>
     <tbody>
+        @{
+            var oddIndex = false;
+        }
         @foreach (var developer in Model)
         {
-            <tr>
+            <tr style="@(oddIndex ? "background-color: #ddd;" : "")">
                 <td>@developer.Name</td>
                 <td>@developer.Email</td>
             </tr>
+            @{
+                switch (oddIndex)
+                {
+                    case false:
+                        oddIndex = true;
+                        break;
+                    case true:
+                        oddIndex = false;
+                        break;
+                }
+            }
         }
     </tbody>
 </table>
