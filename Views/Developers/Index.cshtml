@@ -17,7 +17,10 @@
                 <td>@developer.Name</td>
                 <td>@developer.Email</td>
                 <td>
-                    <a href="/Developers/Details/@developer.Id">Details</a>
+                    @Html.ActionLink("Details",
+                    "Details",
+                    "Developers",
+                    new { id = developer.Id })
                 </td>
             </tr>
             
