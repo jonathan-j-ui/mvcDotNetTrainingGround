@@ -16,4 +16,11 @@ public class DevelopersController : Controller
     {
         return View(_db.Developers);
     }
+
+    public IActionResult Details(int id)
+    {
+        var developer = _db.Developers.Find(dev => dev.Id == id);
+
+        return View(developer);
+    }
 }
