@@ -23,4 +23,9 @@ public class DevelopersController : Controller
 
         return View(developer);
     }
+
+    public IActionResult Create()
+    {
+        return View();
+    }
 }
